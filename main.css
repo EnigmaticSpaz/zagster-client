@@ -11,6 +11,7 @@ body {
     font-size: 6em;
     color: #dc3545;
     background-color: #343a40;
+    text-align: center;
   
   }
   
@@ -31,32 +32,15 @@ body {
   ol, ul {
     list-style: none; }
   
-  table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-  
-  caption, th, td {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle; }
-  
-  q, blockquote {
-    quotes: none; }
-    q:before, q:after, blockquote:before, blockquote:after {
-      content: "";
-      content: none; }
-  
-  a img {
+a img {
     border: none; }
-  
-  article, aside, details, figcaption, figure, header, hgroup, menu, nav, section, summary {
-    display: block; }
-  
-  #main {
+
+    #main {
     padding: 50px; }
   
   div {
-    padding: 5px;
+    padding: 15px;
+    /* background-color: #fd7e14; */
   }
   
   footer {

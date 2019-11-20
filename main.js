@@ -11,3 +11,8 @@ function updateRideCount(data) {
   $("h2#rideCount").html(numberOfRides)
 }
 
+// $.getJSON(BASE_URL + "/rides/locations_and_times" , updatelocationTime)
+// function updatelocationTime(data) {
+//     locationTime = data.count
+//     $("h2#locationTime").html(locationTime)
+//   }

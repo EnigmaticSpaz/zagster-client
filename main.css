@@ -1,48 +1,87 @@
-body {
-    line-height: 1; 
-    background-color: #343a40;
-    color: #f8f9fa;
-    width: 50em;
-    margin: 0 auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-     
-  h1 {
-    font-size: 6em;
-    color: #dc3545;
-    background-color: #343a40;
-    text-align: center;
-  
-  }
-  
-  h2 {
-    color: #f8f9fa;
-    }
-  
-  p {
-    color: #f8f9fa;
-    background-color: #343a40;
-    }
-  
-  a {
-    color: #fd7e14;
-    padding: 1em;
-  }
-  
-  ol, ul {
-    list-style: none; }
-  
-a img {
-    border: none; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; 
+  font-style: italic;
+  text-align: center;}
 
-    #main {
-    padding: 50px; }
-  
-  div {
-    padding: 15px;
-    /* background-color: #fd7e14; */
+body {
+  line-height: 1; 
+  background-color: #343a40;
+  color: #f8f9fa;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+   
+h1 {
+  font-size: 6.3em;
+  color: #dc3545;
+  background-color: #343a40;
+  padding: 5px;
+
+}
+
+h2 {
+  color: #A9A9A9;
+  padding: 5px;
   }
-  
-  footer {
-    background-color: #343a40;
+
+p {
+  color: #A9A9A9;
+  background-color: #343a40;
+  padding: 5px;
   }
+
+a {
+  color: #fd7e14;
+  padding: 5px;
+}
+
+ol, ul {
+  list-style: none; }
+
+/* table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; } */
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section, summary {
+  display: block; } */
+
+#main {
+  padding: 50px; }
+
+div {
+  padding: 5px;
+}
+
+footer {
+  background-color: #343a40;
+}

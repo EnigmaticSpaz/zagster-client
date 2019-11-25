@@ -27,6 +27,7 @@ var chart = new Chart(ctx, {
 });
 }
 
+console.log('Why was this so hard?')
 
 // function updateView() {
 //   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
@@ -37,11 +38,11 @@ var chart = new Chart(ctx, {
 //   $("h2#rideCount").html(numberOfRides)
 // }
 
-// // $.getJSON(BASE_URL + "/rides/locations_and_times" , updatelocationTime)
-// // function updatelocationTime(data) {
-// //     locationTime = data.count
-// //     $("h2#locationTime").html(locationTime)
-// // //   }
+// $.getJSON(BASE_URL + "/rides/locations_and_times" , updatelocationTime)
+// function updatelocationTime(data) {
+//     locationTime = data.count
+//     $("h2#locationTime").html(locationTime)
+// //   }
 
 // // const STATIONS = {
 // //     'columbia_simpson': {

@@ -1,8 +1,75 @@
+const BASE_URL = "https://zagster-service.herokuapp.com"
 
-// const BASE_URL = "https://zagster-service.herokuapp.com"
+// // Pop-up greeting
+// function greeter(name){
+//     alert("Welcome to " + name + " data visualization")
+// }
+// greeter("Liss Meehan's")
 
-// $(updateView)
+// var person = {name: "Liss", age: 26, car: {model: "Mazda", year: 2014} }
+// console.log("My name is "+ person.name)
+// console.log("My age is "+person.age)
+// console.log("My car is a "+person.car.year+", "+person.car.model)
+// console.log('BROOOOOK!')
 
+// if (person.age > 90)[
+//     alert("Holy moly you're ancient!")
+// ]
+
+// add(2,3);
+// function add(num1, num2) {
+//     answer = num1 + num2;
+//     console.log("The answer is: " + answer)
+//     return answer;
+// }
+
+// var data = {"2016":[{"9":220},{"10":141},{"11":89},{"12":16}]}
+// var year_list = data[2016]
+// console.log('year list is '+year_list)
+
+// console.log(year_list[0][9])
+// console.log(year_list[1][10])
+// console.log(year_list[2][11])
+// console.log(year_list[3][12])
+
+
+
+
+
+let years = []
+let months2016 = []
+let months2017 = []
+let months2018 = []
+
+
+function perYear(data) {
+    for (var index = 0, month=9; index <= 3, month<=12; ++index, ++month)
+        months2016.push(data[2016][index][month])
+}
+console.log("2016 data by months is easy "+months2016)
+
+
+
+
+
+// Getting JSON data 
+$(updateView)
+
+function updateView() {
+$.getJSON(BASE_URL + "/rides/count" , updateRideCount)
+}
+$.when ($.getJSON(BASE_URL + "/rides/count/per_month",perYear),
+    ).then(updateChart);
+
+function updateRideCount(data) {
+  numberOfRides = data.count
+  $("h2#rideCount").html(numberOfRides)
+}
+
+
+
+
+// The Graph 
 $(updateGraph)
 
 function updateGraph() {
@@ -26,58 +93,3 @@ var chart = new Chart(ctx, {
     options: {}
 });
 }
-
-console.log('Why was this so hard?')
-
-// function updateView() {
-//   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
-// }
-
-// function updateRideCount(data) {
-//   numberOfRides = data.count
-//   $("h2#rideCount").html(numberOfRides)
-// }
-
-// $.getJSON(BASE_URL + "/rides/locations_and_times" , updatelocationTime)
-// function updatelocationTime(data) {
-//     locationTime = data.count
-//     $("h2#locationTime").html(locationTime)
-// //   }
-
-// // const STATIONS = {
-// //     'columbia_simpson': {
-// //       latitudeRange: {min: 44.048745, max: 44.049205},
-// //       longitudeRange: {min: -121.32598, max: -121.32534}
-// //     },
-// //     'drake_park': {
-// //       latitudeRange: {min: 44.058705, max: 44.059165},
-// //       longitudeRange: {min: -121.31667, max: -121.31603 }
-// //     },
-// //     'g5': {
-// //       latitudeRange: {min: 44.05733, max: 44.05779},
-// //       longitudeRange: {min: -121.31425, max: -121.31361}
-// //     },
-// //     'galveston': {
-// //       latitudeRange: {min: 44.056495, max: 44.056955},
-// //       longitudeRange: {min: -121.328415, max: -121.327775}
-// //     },
-// //     'grc': {
-// //       latitudeRange: {min: 44.04412, max: 44.04458},
-// //       longitudeRange: {min: -121.324075, max: -121.323435}
-// //     },
-// //     'old_mill': {
-// //       latitudeRange: {min: 44.04351, max: 44.04397},
-// //       longitudeRange: {min: -121.316145, max: -121.315505}
-// //     },
-// //     'osu_cascades': {
-// //       latitudeRange: {min: 44.04276, max: 44.04322},
-// //       longitudeRange: {min: -121.333995, max: -121.333355}
-// //     },
-// //     'ten_barrel': {
-// //       latitudeRange: {min: 44.060185, max: 44.060645},
-// //       longitudeRange: {min: -121.313305 , max: -121.312665}
-// //     }
-// //   }
-  
-// //   module.exports = STATIONS
-

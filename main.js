@@ -1,20 +1,24 @@
 const BASE_URL = "https://zagster-service.herokuapp.com"
 
-// // Pop-up greeting
-// function greeter(name){
-//     alert("Welcome to " + name + " data visualization")
-// }
-// greeter("Liss Meehan's")
+// Pop-up greeting
+function greeter(name){
+    alert("Welcome to " + name + " data visualization")
+}
+greeter("Liss Meehan's")
 
-// var person = {name: "Liss", age: 26, car: {model: "Mazda", year: 2014} }
-// console.log("My name is "+ person.name)
-// console.log("My age is "+person.age)
-// console.log("My car is a "+person.car.year+", "+person.car.model)
+var person = {name: "Liss", age: 26, car: {model: "Mazda", year: 2014} }
+console.log("My name is "+ person.name)
+console.log("My age is "+person.age)
+console.log("My car is a "+person.car.year+", "+person.car.model)
 // console.log('BROOOOOK!')
 
-// if (person.age > 90)[
-//     alert("Holy moly you're ancient!")
-// ]
+if (person.age > 90)[
+    alert("Holy moly you're ancient!")
+]
+
+if (person.age < 30)[
+    alert("What a kid!")
+]
 
 // add(2,3);
 // function add(num1, num2) {

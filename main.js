@@ -63,7 +63,7 @@ function updateView() {
 $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
 }
 $.when ($.getJSON(BASE_URL + "/rides/count/per_month",perYear),
-    ).then(updateChart);
+    ).then(updateGraph);
 
 function updateRideCount(data) {
   numberOfRides = data.count

@@ -65,22 +65,21 @@ function updateChart() {
             datasets: [{
                 label: 'Zagster Number of Rides Per Month in 2016',
                 backgroundColor: [
-                    '#A9A9A9',
-                    '#fd7e14',
-                    '#A9A9A9',
-                    '#dc3545',
-                    '#fd7e14',
-                    '#dc3545',
-                    '#A9A9A9',
-                    '#fd7e14',
-                    '#A9A9A9',
-                    '#dc3545',
-                    '#fd7e14',
-                    '#dc3545'
-                  ],
+                  '#A9A9A9',
+                  '#fd7e14',
+                  '#A9A9A9',
+                  '#dc3545',
+                  '#fd7e14',
+                  '#dc3545',
+                  '#A9A9A9',
+                  '#fd7e14',
+                  '#A9A9A9',
+                  '#dc3545',
+                  '#fd7e14',
+                  '#dc3545'
+                ],
                 borderColor: '#dc3545',
-                //data: [0, 10, 5, 2, 20, 30, 45]
-                data: my_data
+                data: my_data,
             }]
         },
         

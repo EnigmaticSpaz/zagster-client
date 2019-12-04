@@ -4,7 +4,7 @@ $(updateView)
 
 
 var my_data = []
-var my_data2 = []
+var pattern = []
 
 function updateView() {
   
@@ -46,10 +46,6 @@ function perYear(data) {
     my_data.push(data2017[11][12])
 
 
-    var data2018 = data[2018]  
-
-    console.log(data2018[0][1]) 
-    my_data2.push(data2018[0][1])
     //keep going to get all data points
 
     //challenge - use a loop to extract the data
@@ -68,10 +64,23 @@ function updateChart() {
             labels: ['January','February','March','April','May','June','July','August','September', 'October','November','December'],
             datasets: [{
                 label: 'Zagster Number of Rides Per Month in 2016',
-                backgroundColor: 'rgb(253, 126, 20)',
-                borderColor: 'rgb(220, 53, 69)',
+                backgroundColor: [
+                    '#A9A9A9',
+                    '#fd7e14',
+                    '#A9A9A9',
+                    '#dc3545',
+                    '#fd7e14',
+                    '#dc3545',
+                    '#A9A9A9',
+                    '#fd7e14',
+                    '#A9A9A9',
+                    '#dc3545',
+                    '#fd7e14',
+                    '#dc3545'
+                  ],
+                borderColor: '#dc3545',
                 //data: [0, 10, 5, 2, 20, 30, 45]
-                data: my_data, my_data2
+                data: my_data
             }]
         },
         
@@ -80,3 +89,4 @@ function updateChart() {
         options: {}
     });
 }
+// Chart.defaults.polarArea.animation.animateRotate = true;

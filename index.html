@@ -15,11 +15,20 @@
     <div id="heading">
         <h1>Zagster Bike Share Analysis</h1>
     </div> 
-    <canvas id="myChart"></canvas>
-    <div style="padding: 1em;">
-        <p>This chart represents total amount of rentals taken per month in the year 2017.</p>
-        <p>The maximum rentals taken was 405 in July.</p>
-        <p>The minimum rentals taken was 20 in January.</p>
-    </div>
+    <div style="width: 100%; display: table;">
+            <div style="display: table-row;">
+                <div id="data" style="width:75%; display: table-cell;">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div style="width:25%; vertical-align: middle;  display: table-cell;">
+                        <p>Total amount of Bend, Oregon<a href="https://www.zagster.com" target="_blank">Zagster</a>bike rentals taken per month in 2017.</p>
+                        <p>The maximum monthly rentals: 405 in July</p>
+                        <p>The minimum monthly rentals: 20 in January</p>
+                        <p>Sourced from<a href="https://github.com/osu-cascades/cs160-zagster-service" target="_blank">github</a>microservice.</p> 
+                </div>
+            </div>
+    <footer class="container">
+        <p><a href="https://enigmaticspaz.github.io" target="_blank">&copy; Liss 2019</a></p>
+    </footer>
 </body>
 </html>
